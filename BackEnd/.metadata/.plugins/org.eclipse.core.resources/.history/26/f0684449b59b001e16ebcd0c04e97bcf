@@ -1,0 +1,31 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/gml
+spring.datasource.username=root
+spring.datasource.password=Fela2018
+
+spring.jpa.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jackson.serialization.fail-on-empty-beans=false
+
+# ACTUATOR
+management.endpoints.web.base-path=/actuator
+management.endpoints.web.exposure.include=*
+management.endpoint.health.group.custom.show-components=always
+management.endpoint.health.group.custom.show-details=always
+
+#Swagger configuration
+swagger.properties.project-name=Clients
+swagger.properties.project-short-description = Microservicio contruido para las transacciones de cliente
+swagger.properties.project-tos-msg = API Terms Of Service
+swagger.properties.project-tos-link = Terms of service URL
+swagger.properties.project-licence-msg = License of API
+swagger.properties.project-licence-link = API license URL
+swagger.properties.organization-url = Edinson Orozco Gonzalez
+swagger.properties.developer-name = Edinson Orozco Gonzalez
+swagger.properties.developer-mail = edinson_orozco@hotmail.com
+
+#Controller Configuration
+controller.properties.base-path=api
+
+# LOGGING
+logging.file.name=cliente.log
+logging.file.path=/var/logs/

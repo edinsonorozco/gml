@@ -1,0 +1,54 @@
+<div class="center" mat-dialog-content>
+  <h1 mat-dialog-title>Agregar Empleado</h1>
+  <form class="example-form" [formGroup]="clientForm" autocomplete="off">
+    
+    <mat-form-field class="field-app">
+      <mat-label>Shared Key</mat-label>
+      <input matInput formControlName="sharedKey">
+      <mat-hint *ngIf="validateRequired(f['sharedKey'])">
+        Campo obligatorio
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="field-app">
+      <mat-label>Business Id</mat-label>
+      <input matInput formControlName="businessId">
+      <mat-hint *ngIf="validateRequired(f['businessId'])">
+        Campo obligatorio
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="field-app">
+      <mat-label>E-mail</mat-label>
+      <input matInput formControlName="email">
+      <mat-hint *ngIf="validateRequired(f['email'])">
+        Campo obligatorio
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="field-app">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone">
+      <mat-hint *ngIf="validateRequired(f['phone'])">
+        Campo obligatorio
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="field-app">
+      <mat-label>Data Added</mat-label>
+      <input matInput [matDatepicker]="dp3" readonly="true"
+             formControlName="dataAdded">
+      <mat-hint *ngIf="validateRequired(f['dataAdded'])">
+        Campo obligatorio
+      </mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+      <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+    </mat-form-field>
+
+  </form>
+</div>
+<div mat-dialog-actions align="center">
+  <button mat-raised-button (click)="cancelar()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="aceptar()" cdkFocusInitial>Aceptar
+  </button>
+</div>

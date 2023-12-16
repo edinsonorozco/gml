@@ -1,0 +1,18 @@
+package com.ms.activities.services;
+
+import java.util.List;
+
+import com.ms.clients.entities.Activities;
+
+public interface ActivitiesService {
+
+    List<Activities> findAll();
+
+    void save(Activities ativities);
+    
+    void delete(Long idActivities);
+    
+    Activities update(Activities activities);    
+
+    Activities findById(Long id);
+}

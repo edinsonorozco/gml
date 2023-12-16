@@ -1,0 +1,41 @@
+package com.ms.clients.controllers;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.ms.clients.services.ClientsImpl;
+import com.ms.clients.services.ClientsInterfaces;
+
+@ExtendWith(MockitoExtension.class)
+public class ClientsControllerTest {
+	
+	
+	@Mock
+    private ClientsImpl clientsImpl;
+
+    @InjectMocks
+    private ClientsController clientsController;
+    
+    @Test
+    void deleteEmployee_Success() {
+        // Arrange
+        String sharedKey = "prueba";
+        when(clientsImpl.delete(sharedKey)).thenReturn(true);
+
+        // Act
+        ResponseEntity<?> responseEntity = clientsController.deleteEmployee(sharedKey);
+
+        // Assert
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        // You can add more assertions based on the response content if needed
+    }
+
+}

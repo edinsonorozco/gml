@@ -1,0 +1,5 @@
+package com.ms.activities.entities;
+
+public class Clients {
+
+}

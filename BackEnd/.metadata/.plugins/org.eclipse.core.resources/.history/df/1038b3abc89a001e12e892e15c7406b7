@@ -1,0 +1,5 @@
+package com.ms.activities.repositories;
+
+public interface ClientsRepository {
+
+}

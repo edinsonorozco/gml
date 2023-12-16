@@ -1,0 +1,46 @@
+package com.ms.clients.entities;
+
+import java.time.LocalDate;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@EqualsAndHashCode
+@AllArgsConstructor
+@Table(name = "actividades")
+public class Activities {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+	
+	@Column(name = "nombre_actividad")
+    private String activitiesName;
+    
+    @Column(name = "estado")
+    private String status;
+    
+    @Column(name = "fecha_ejecucion")
+    private LocalDate executionDate;
+		
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_empleado", nullable = false)
+    private Employee employee;
+	
+	public Activities() {        
+    }
+}

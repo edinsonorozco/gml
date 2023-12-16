@@ -1,0 +1,20 @@
+package com.ms.activities.services;
+
+import java.util.List;
+
+import com.ms.clients.entities.Employee;
+
+public interface EmployeeService {
+
+    List<Employee> findAll();
+
+    void save(Employee employee);
+    
+    void delete(Long idEmpleado);
+    
+    Employee update(Employee employee);
+
+    Employee findByIdentification(String identificacion);
+
+    Employee findById(Long id);
+}

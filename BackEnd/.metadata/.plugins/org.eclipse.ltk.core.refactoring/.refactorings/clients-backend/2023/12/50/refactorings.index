@@ -1,0 +1,20 @@
+1702589885699	Rename type 'Clients'
+1702637108424	Rename package 'com.ms.activities'
+1702637124409	Rename package 'com.ms.activities.controllers'
+1702637146926	Rename package 'com.ms.activities.entities'
+1702637166176	Rename package 'com.ms.activities.enums'
+1702637177945	Rename package 'com.ms.activities.exceptions'
+1702637189023	Rename package 'com.ms.activities.repositories'
+1702637200117	Rename package 'com.ms.activities.services'
+1702637216589	Rename type 'ActivitiesBackendApplication'
+1702637227989	Delete elements
+1702637233977	Delete elements
+1702637241127	Delete element
+1702637253719	Delete elements
+1702637261164	Delete elements
+1702637457618	Delete element
+1702638138438	Delete elements
+1702638518491	Delete element
+1702658122045	Copy package
+1702658131604	Delete elements
+1702658143912	Rename package 'com.ms.clients.controllers.copy'

@@ -1,0 +1,93 @@
+package com.ms.clients.controllers;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.dao.DataAccessException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.ms.clients.entities.Clients;
+import com.ms.clients.services.ClientsImpl;
+import com.ms.clients.services.ClientsInterfaces;
+
+@ExtendWith(MockitoExtension.class)
+public class ClientsControllerTest {
+	
+	
+	@Mock
+    private ClientsImpl clientsImpl;
+
+    @InjectMocks
+    private ClientsController clientsController;
+    
+    @Test
+    void listAllClients_Success() {
+        // Arrange
+        List<Clients> clientsList = new ArrayList<>();
+        clientsList.add(new Clients(/* set client data here */));
+        clientsList.add(new Clients(/* set client data here */));
+
+        when(clientsImpl.findAll()).thenReturn(clientsList);
+
+        // Act
+        List<Clients> returnedClients = clientsController.listAllClients();
+
+        // Assert
+        assertEquals(clientsList.size(), returnedClients.size());
+        // Add more assertions if needed based on the behavior of findAll()
+    }
+    
+    @Test
+    void deleteEmployee_Success() {
+        String sharedKey = "yourSharedKey";
+        Map<String, Object> response = new HashMap<>();
+        response.put("message", "Cliente eliminado con éxito.");
+        doNothing().when(clientsImpl).delete(sharedKey);
+        ResponseEntity<?> responseEntity = clientsController.deleteEmployee(sharedKey);
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(response, responseEntity.getBody());
+    }
+    
+    @Test
+    void deleteEmployee_Failure() {
+        String sharedKey = "yourSharedKey";
+        Map<String, Object> response = new HashMap<>();
+        response.put("message", "Error al hacer la eliminacion en la base de datos.");
+        //DataAccessException dataAccessException = new DataAccessException("Mocked Exception");
+        //doThrow(dataAccessException).when(clientsImpl).delete(sharedKey);
+        ResponseEntity<?> responseEntity = clientsController.deleteEmployee(sharedKey);
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+        assertEquals(response.get("message"), ((Map<?, ?>) responseEntity.getBody()).get("message"));
+    }
+    
+    
+    @Test
+    void updateEmpleado_Success() {
+        Clients clientToUpdate = new Clients("prueba1","prueba2","prueba3","prueba4","prueba5");
+        when(clientsImpl.update(clientToUpdate)).thenReturn(clientToUpdate);
+        ResponseEntity<?> responseEntity = clientsController.updateEmpleado(clientToUpdate);
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }
+    
+    
+    @Test
+    void updateEmpleado_Failure() {
+        Clients clientToUpdate = new Clients("prueba1","prueba2","prueba3","prueba4","prueba5");
+        //when(clientsImpl.update(clientToUpdate)).thenThrow(new DataAccessException("Mocked Exception"));
+        ResponseEntity<?> responseEntity = clientsController.updateEmpleado(clientToUpdate);
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+    }
+}

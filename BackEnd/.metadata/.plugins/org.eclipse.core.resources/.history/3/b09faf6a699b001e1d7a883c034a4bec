@@ -1,0 +1,5 @@
+package com.ms.clients.controllers;
+
+public class ClientsControllerTest {
+
+}

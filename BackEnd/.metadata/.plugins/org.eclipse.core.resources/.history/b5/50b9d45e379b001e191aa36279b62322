@@ -1,0 +1,57 @@
+package com.ms.clients.services;
+
+import com.ms.clients.entities.Activities;
+import com.ms.clients.enums.StatusActivities;
+import com.ms.clients.repositories.ActivitiesRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+
+@Service
+public class ActivitiesServiceImp implements ActivitiesService {
+
+    @Autowired
+    private ActivitiesRepository activitiesRepository;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Activities> findAll() {
+        return activitiesRepository.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Activities findById(Long id) {
+        return activitiesRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Activities activities) {
+    	activities.setStatus(StatusActivities.EMITIDA.toString());
+    	activitiesRepository.save(activities);
+    }
+    
+    @Override
+    @Transactional
+    public void delete(Long idActivities) {
+    	activitiesRepository.deleteById(idActivities);
+    }
+    
+    @Override
+    @Transactional
+    public Activities update(Activities activities) {
+    	activities.setStatus(StatusActivities.EJECUTADA.toString());
+    	Activities activitiesUpdate = activitiesRepository.findById(activities.getId()).orElse(null);
+    	activitiesUpdate.setId(activities.getId());
+    	activitiesUpdate.setActivitiesName(activities.getActivitiesName());
+    	activitiesUpdate.setStatus(activities.getStatus());
+    	activitiesUpdate.setExecutionDate(activities.getExecutionDate());
+    	activitiesUpdate.setEmployee(activities.getEmployee());
+    	activitiesRepository.save(activitiesUpdate);
+        return activitiesUpdate;
+    }
+
+}

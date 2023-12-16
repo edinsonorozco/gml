@@ -1,0 +1,10 @@
+package com.ms.activities.services;
+
+import java.util.List;
+
+import com.ms.activities.entities.Clients;
+
+public interface ClientsInterfaces {
+
+	List<Clients> findAll();
+}

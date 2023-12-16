@@ -1,0 +1,53 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background: #e4e4e4;
+}
+
+.icono {
+  transform: scale(3.5);
+  padding-left: 3rem;
+  margin-top: 2rem;
+  color: darkred;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.btn-list {
+  width: 220px;
+}
+
+.icono-menu {
+  vertical-align: baseline;
+  padding-right: 15px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem;
+}
+
+h1 {
+  padding-left: 2rem;
+}
+
+*>>> .mat-hint {
+  color: #e20201 !important;
+  font-size: 12px;
+}

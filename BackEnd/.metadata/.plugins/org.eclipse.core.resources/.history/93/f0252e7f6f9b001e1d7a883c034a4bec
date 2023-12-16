@@ -1,0 +1,16 @@
+package com.ms.clients.services;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.ms.clients.repositories.ClientsRepository;
+
+public class ClientsimplTest {
+	
+	@Mock
+    private ClientsRepository clientsRepository;
+
+    @InjectMocks
+    private ClientsImpl clientsImpl;
+
+}

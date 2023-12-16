@@ -1,0 +1,23 @@
+1657836613981	Delete elements
+1657836619063	Delete elements
+1657836627968	Delete elements
+1657836651947	Delete elements
+1657836731314	Delete elements
+1657836788912	Delete element
+1657837259808	Rename package 'com.driving.school'
+1657837303866	Rename package 'com.driving.school.controllers'
+1657837316087	Rename package 'com.driving.school.services'
+1657837327614	Rename package 'com.driving.school.repositories'
+1657837340103	Rename package 'com.driving.school.exceptions'
+1657837351073	Rename package 'com.driving.school.entities'
+1657837451129	Rename type 'DrivingSchoolBackendApplication'
+1657856500051	Rename type 'StudentServiceImp'
+1657856511967	Rename type 'StudentService'
+1657856524193	Rename type 'StudentRepository'
+1657856541202	Rename type 'Student'
+1657856555849	Rename type 'StudentController'
+1657897850894	Rename type 'Empleado'
+1657898107098	Rename type 'EmpleadoController'
+1657898128865	Rename type 'EmpleadoRepository'
+1657898140843	Rename type 'EmpleadoService'
+1657898151299	Rename type 'EmpleadoServiceImp'

@@ -1,0 +1,824 @@
+2023-12-15 05:48:36.736  INFO 4028 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 4028 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:48:36.740  INFO 4028 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:48:37.213  INFO 4028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:48:37.242  INFO 4028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:48:37.544  INFO 4028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:48:37.552  INFO 4028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:48:37.552  INFO 4028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:48:37.609  INFO 4028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:48:37.609  INFO 4028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 843 ms
+2023-12-15 05:48:37.767  INFO 4028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:48:37.800  INFO 4028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:48:37.899  INFO 4028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:48:37.960  INFO 4028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:48:38.141  INFO 4028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:48:38.161  INFO 4028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:48:38.514  INFO 4028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:48:38.520  INFO 4028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:48:38.692  WARN 4028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:48:38.958  INFO 4028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:48:38.988  INFO 4028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:48:38.996  INFO 4028 --- [main] c.ms.clients.ClientsBackendApplication   : Started ClientsBackendApplication in 2.502 seconds (JVM running for 3.114)
+2023-12-15 05:48:39.589  INFO 4028 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 05:48:39.590  INFO 4028 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 05:48:39.591  INFO 4028 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-15 05:53:06.169  INFO 4028 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-15 05:53:06.267  INFO 4028 --- [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:53:06.270  INFO 4028 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:53:06.278  INFO 4028 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:53:46.323  INFO 1292 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 1292 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:53:46.327  INFO 1292 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:53:46.918  INFO 1292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:53:46.949  INFO 1292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:53:47.264  INFO 1292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:53:47.271  INFO 1292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:53:47.272  INFO 1292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:53:47.330  INFO 1292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:53:47.330  INFO 1292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 978 ms
+2023-12-15 05:53:47.494  INFO 1292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:53:47.525  INFO 1292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:53:47.626  INFO 1292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:53:47.691  INFO 1292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:53:47.878  INFO 1292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:53:47.898  INFO 1292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:53:48.275  INFO 1292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:53:48.280  INFO 1292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:53:48.286  WARN 1292 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springFoxConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'controller.properties.base-path' in value "${controller.properties.base-path}"
+2023-12-15 05:53:48.287  INFO 1292 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:53:48.289  INFO 1292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:53:48.303  INFO 1292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:53:48.305  INFO 1292 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:53:48.316  INFO 1292 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:53:48.332 ERROR 1292 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springFoxConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'controller.properties.base-path' in value "${controller.properties.base-path}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'controller.properties.base-path' in value "${controller.properties.base-path}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 17 common frames omitted
+
+2023-12-15 05:55:30.330  INFO 17804 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 17804 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:55:30.332  INFO 17804 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:55:30.829  INFO 17804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:55:30.856  INFO 17804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:55:31.133  INFO 17804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:55:31.140  INFO 17804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:55:31.140  INFO 17804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:55:31.205  INFO 17804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:55:31.206  INFO 17804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 849 ms
+2023-12-15 05:55:31.350  INFO 17804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:55:31.373  INFO 17804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:55:31.453  INFO 17804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:55:31.502  INFO 17804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:55:31.659  INFO 17804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:55:31.674  INFO 17804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:55:31.987  INFO 17804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:55:31.992  INFO 17804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:55:32.212  WARN 17804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:55:32.321  INFO 17804 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:55:32.513  INFO 17804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:55:32.514  INFO 17804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 05:55:32.523  INFO 17804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 05:55:32.524  WARN 17804 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 05:55:32.526  INFO 17804 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:55:32.528  INFO 17804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:55:32.537  INFO 17804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:55:32.652  INFO 17804 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:55:32.663  INFO 17804 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:55:32.675 ERROR 17804 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 05:56:33.664  INFO 18128 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 18128 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:56:33.666  INFO 18128 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:56:34.192  INFO 18128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:56:34.223  INFO 18128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:56:34.524  INFO 18128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:56:34.530  INFO 18128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:56:34.530  INFO 18128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:56:34.594  INFO 18128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:56:34.594  INFO 18128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2023-12-15 05:56:34.749  INFO 18128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:56:34.773  INFO 18128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:56:34.857  INFO 18128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:56:34.911  INFO 18128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:56:35.074  INFO 18128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:56:35.090  INFO 18128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:56:35.409  INFO 18128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:56:35.414  INFO 18128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:56:35.639  WARN 18128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:56:35.759  INFO 18128 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:56:35.956  INFO 18128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:56:35.957  INFO 18128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 05:56:35.967  INFO 18128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 05:56:35.968  WARN 18128 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 05:56:35.971  INFO 18128 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:56:35.972  INFO 18128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:56:35.981  INFO 18128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:56:36.070  INFO 18128 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:56:36.081  INFO 18128 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:56:36.093 ERROR 18128 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 05:57:01.189  INFO 12248 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 12248 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:57:01.191  INFO 12248 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:57:01.706  INFO 12248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:57:01.732  INFO 12248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:57:02.003  INFO 12248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:57:02.009  INFO 12248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:57:02.010  INFO 12248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:57:02.067  INFO 12248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:57:02.068  INFO 12248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2023-12-15 05:57:02.207  INFO 12248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:57:02.230  INFO 12248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:57:02.310  INFO 12248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:57:02.360  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:57:02.515  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:57:02.531  INFO 12248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:57:02.837  INFO 12248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:57:02.842  INFO 12248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:57:03.074  WARN 12248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:57:03.186  INFO 12248 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:57:03.373  INFO 12248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:57:03.374  INFO 12248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 05:57:03.383  INFO 12248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 05:57:03.385  WARN 12248 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 05:57:03.387  INFO 12248 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:57:03.389  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:57:03.398  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:57:03.484  INFO 12248 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:57:03.499  INFO 12248 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:57:03.513 ERROR 12248 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 05:58:25.626  INFO 17980 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 17980 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:58:25.628  INFO 17980 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:58:26.122  INFO 17980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:58:26.148  INFO 17980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:58:26.431  INFO 17980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:58:26.437  INFO 17980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:58:26.437  INFO 17980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:58:26.498  INFO 17980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:58:26.498  INFO 17980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 848 ms
+2023-12-15 05:58:26.643  INFO 17980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:58:26.668  INFO 17980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:58:26.754  INFO 17980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:58:26.803  INFO 17980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:58:26.969  INFO 17980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:58:26.985  INFO 17980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:58:27.294  INFO 17980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:58:27.299  INFO 17980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:58:27.521  WARN 17980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:58:27.629  INFO 17980 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:58:27.816  INFO 17980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:58:27.817  INFO 17980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 05:58:27.826  INFO 17980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 05:58:27.827  WARN 17980 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 05:58:27.829  INFO 17980 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:58:27.831  INFO 17980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:58:27.841  INFO 17980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:58:27.928  INFO 17980 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:58:27.938  INFO 17980 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:58:27.951 ERROR 17980 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 05:58:51.195  INFO 3412 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 3412 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 05:58:51.200  INFO 3412 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:58:51.797  INFO 3412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 05:58:51.830  INFO 3412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2023-12-15 05:58:52.152  INFO 3412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:58:52.160  INFO 3412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:58:52.161  INFO 3412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 05:58:52.221  INFO 3412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:58:52.221  INFO 3412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
+2023-12-15 05:58:52.382  INFO 3412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 05:58:52.412  INFO 3412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 05:58:52.512  INFO 3412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 05:58:52.573  INFO 3412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 05:58:52.750  INFO 3412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 05:58:52.770  INFO 3412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 05:58:53.131  INFO 3412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 05:58:53.137  INFO 3412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:58:53.395  WARN 3412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 05:58:53.520  INFO 3412 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:58:53.760  INFO 3412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:58:53.761  INFO 3412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 05:58:53.772  INFO 3412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 05:58:53.776  WARN 3412 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 05:58:53.779  INFO 3412 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 05:58:53.781  INFO 3412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 05:58:53.795  INFO 3412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 05:58:53.896  INFO 3412 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 05:58:53.909  INFO 3412 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 05:58:53.924 ERROR 3412 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 06:02:33.184  INFO 21368 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 21368 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:02:33.186  INFO 21368 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:02:33.690  INFO 21368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:02:33.720  INFO 21368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:02:34.004  INFO 21368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:02:34.010  INFO 21368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:02:34.010  INFO 21368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:02:34.069  INFO 21368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:02:34.070  INFO 21368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 863 ms
+2023-12-15 06:02:34.217  INFO 21368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:02:34.242  INFO 21368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:02:34.325  INFO 21368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:02:34.374  INFO 21368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:02:34.538  INFO 21368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:02:34.555  INFO 21368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:02:34.885  INFO 21368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:02:34.890  INFO 21368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:02:35.117  WARN 21368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:02:35.228  INFO 21368 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:02:35.466  INFO 21368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:02:35.467  INFO 21368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 06:02:35.480  INFO 21368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 06:02:35.483  WARN 21368 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 06:02:35.485  INFO 21368 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:02:35.488  INFO 21368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:02:35.500  INFO 21368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 06:02:35.643  INFO 21368 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 06:02:35.657  INFO 21368 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 06:02:35.673 ERROR 21368 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 06:05:13.555  INFO 17960 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 17960 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:05:13.557  INFO 17960 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:05:14.083  INFO 17960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:05:14.109  INFO 17960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:05:14.382  INFO 17960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:05:14.389  INFO 17960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:05:14.390  INFO 17960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:05:14.472  INFO 17960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:05:14.473  INFO 17960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
+2023-12-15 06:05:14.670  INFO 17960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:05:14.693  INFO 17960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:05:14.773  INFO 17960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:05:14.825  INFO 17960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:05:15.015  INFO 17960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:05:15.038  INFO 17960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:05:15.394  INFO 17960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:05:15.399  INFO 17960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:05:15.637  WARN 17960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:05:15.753  INFO 17960 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:05:15.955  INFO 17960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:05:15.955  INFO 17960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 06:05:15.969  INFO 17960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 06:05:15.971  WARN 17960 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 06:05:15.974  INFO 17960 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:05:15.976  INFO 17960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:05:15.990  INFO 17960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 06:05:16.108  INFO 17960 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 06:05:16.121  INFO 17960 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 06:05:16.138 ERROR 17960 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 06:06:24.663  INFO 16272 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 16272 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:06:24.665  INFO 16272 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:06:25.164  INFO 16272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:06:25.192  INFO 16272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:06:25.475  INFO 16272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:06:25.482  INFO 16272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:06:25.482  INFO 16272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:06:25.547  INFO 16272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:06:25.547  INFO 16272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 858 ms
+2023-12-15 06:06:25.699  INFO 16272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:06:25.722  INFO 16272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:06:25.803  INFO 16272 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:06:25.851  INFO 16272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:06:26.007  INFO 16272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:06:26.024  INFO 16272 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:06:26.323  INFO 16272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:06:26.328  INFO 16272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:06:26.543  WARN 16272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:06:26.647  INFO 16272 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:06:26.824  INFO 16272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:06:26.824  INFO 16272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 06:06:26.834  INFO 16272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 06:06:26.835  WARN 16272 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 06:06:26.838  INFO 16272 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:06:26.840  INFO 16272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:06:26.850  INFO 16272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 06:06:27.102  INFO 16272 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 06:06:27.113  INFO 16272 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 06:06:27.127 ERROR 16272 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:18) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 06:07:36.640  INFO 6932 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 6932 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:07:36.642  INFO 6932 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:07:37.184  INFO 6932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:07:37.213  INFO 6932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:07:37.517  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:07:37.526  INFO 6932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:07:37.527  INFO 6932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:07:37.591  INFO 6932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:07:37.592  INFO 6932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 925 ms
+2023-12-15 06:07:37.740  INFO 6932 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:07:37.764  INFO 6932 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:07:37.849  INFO 6932 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:07:37.897  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:07:38.086  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:07:38.106  INFO 6932 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:07:38.486  INFO 6932 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:07:38.492  INFO 6932 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:07:38.775  WARN 6932 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:07:38.894  INFO 6932 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:07:39.221  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:07:39.222  INFO 6932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-12-15 06:07:39.231  INFO 6932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-12-15 06:07:39.233  WARN 6932 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2023-12-15 06:07:39.235  INFO 6932 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:07:39.237  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:07:39.246  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 06:07:39.340  INFO 6932 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-15 06:07:39.350  INFO 6932 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-15 06:07:39.364 ERROR 6932 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.20.jar:5.3.20]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.ms.clients.ClientsBackendApplication.main(ClientsBackendApplication.java:18) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.6.1.jar:2.6.1]
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38) ~[guava-18.0.jar:na]
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[na:na]
+	at java.base/java.util.TimSort.sort(TimSort.java:234) ~[na:na]
+	at java.base/java.util.Arrays.sort(Arrays.java:1441) ~[na:na]
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48) ~[guava-18.0.jar:na]
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268) ~[guava-18.0.jar:na]
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226) ~[guava-18.0.jar:na]
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373) ~[guava-18.0.jar:na]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127) ~[springfox-spring-web-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.20.jar:5.3.20]
+	... 14 common frames omitted
+
+2023-12-15 06:22:42.459  INFO 14972 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 14972 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:22:42.462  INFO 14972 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:22:43.035  INFO 14972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:22:43.068  INFO 14972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:22:43.383  INFO 14972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:22:43.391  INFO 14972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:22:43.391  INFO 14972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:22:43.455  INFO 14972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:22:43.456  INFO 14972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2023-12-15 06:22:43.645  INFO 14972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:22:43.681  INFO 14972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:22:43.787  INFO 14972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:22:43.868  INFO 14972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:22:44.076  INFO 14972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:22:44.097  INFO 14972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:22:44.469  INFO 14972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:22:44.475  INFO 14972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:22:44.706  WARN 14972 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:22:45.235  INFO 14972 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:22:45.271  INFO 14972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:22:45.280  INFO 14972 --- [main] c.ms.clients.ClientsBackendApplication   : Started ClientsBackendApplication in 3.065 seconds (JVM running for 3.69)
+2023-12-15 06:22:45.896  INFO 14972 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 06:22:45.897  INFO 14972 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 06:22:45.898  INFO 14972 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-15 06:23:10.928  INFO 14972 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 124 ms
+2023-12-15 06:26:52.446  INFO 14972 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-15 06:26:52.549  INFO 14972 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:26:52.552  INFO 14972 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:26:52.561  INFO 14972 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 06:27:02.784  INFO 10312 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 10312 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 06:27:02.789  INFO 10312 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 06:27:03.324  INFO 10312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 06:27:03.357  INFO 10312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2023-12-15 06:27:03.672  INFO 10312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 06:27:03.679  INFO 10312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 06:27:03.679  INFO 10312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 06:27:03.739  INFO 10312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 06:27:03.739  INFO 10312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2023-12-15 06:27:03.902  INFO 10312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 06:27:03.933  INFO 10312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 06:27:04.031  INFO 10312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 06:27:04.098  INFO 10312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 06:27:04.278  INFO 10312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 06:27:04.297  INFO 10312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 06:27:04.684  INFO 10312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 06:27:04.690  INFO 10312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:27:04.916  WARN 10312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 06:27:05.414  INFO 10312 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 06:27:05.451  INFO 10312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 06:27:05.460  INFO 10312 --- [main] c.ms.clients.ClientsBackendApplication   : Started ClientsBackendApplication in 2.918 seconds (JVM running for 3.548)
+2023-12-15 06:27:05.691  INFO 10312 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 06:27:05.693  INFO 10312 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 06:27:05.693  INFO 10312 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-12-15 06:27:57.026  INFO 10312 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 90 ms
+2023-12-15 06:32:35.700  INFO 10312 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-15 06:32:35.796  INFO 10312 --- [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 06:32:35.799  INFO 10312 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 06:32:35.810  INFO 10312 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-15 20:49:18.481  INFO 9452 --- [main] c.ms.clients.ClientsBackendApplication   : Starting ClientsBackendApplication using Java 11.0.17 on asus-f15 with PID 9452 (D:\Pruebas Tecnicas\GML\BackEnd\clients-backend\target\classes started by Edinson Orozco in D:\Pruebas Tecnicas\GML\BackEnd\clients-backend)
+2023-12-15 20:49:18.482  INFO 9452 --- [main] c.ms.clients.ClientsBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 20:49:19.016  INFO 9452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 20:49:19.048  INFO 9452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2023-12-15 20:49:19.348  INFO 9452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 20:49:19.355  INFO 9452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 20:49:19.355  INFO 9452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-15 20:49:19.432  INFO 9452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 20:49:19.432  INFO 9452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2023-12-15 20:49:19.602  INFO 9452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 20:49:19.631  INFO 9452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-12-15 20:49:19.722  INFO 9452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 20:49:19.783  INFO 9452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 20:49:20.094  INFO 9452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 20:49:20.115  INFO 9452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-15 20:49:20.500  INFO 9452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 20:49:20.506  INFO 9452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 20:49:20.743  WARN 9452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 20:49:21.233  INFO 9452 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 20:49:21.279  INFO 9452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 20:49:21.288  INFO 9452 --- [main] c.ms.clients.ClientsBackendApplication   : Started ClientsBackendApplication in 3.044 seconds (JVM running for 3.575)
+2023-12-15 20:49:21.674  INFO 9452 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 20:49:21.675  INFO 9452 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 20:49:21.676  INFO 9452 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-15 20:50:07.927  INFO 9452 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 122 ms
+2023-12-15 20:54:18.795  INFO 9452 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-15 20:54:18.917  INFO 9452 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 20:54:18.920  INFO 9452 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 20:54:18.929  INFO 9452 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

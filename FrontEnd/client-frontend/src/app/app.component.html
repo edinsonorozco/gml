@@ -1,0 +1,29 @@
+<ng-container class="mat-typography">
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="true" [fixedTopGap]="0"
+                 [fixedBottomGap]="0">
+      <mat-selection-list multiple="false">
+        <mat-list-option *ngFor="let opcion of opcionesMenu" (click)="abrir(opcion.url)">
+          <div class="icon-text">
+            <mat-icon class="icono-menu">{{opcion.icon}}</mat-icon>
+            <span class="aligned-with-icon">{{opcion.name}}</span>
+          </div>
+          <mat-divider></mat-divider>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="example-header">
+        <button mat-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <h1>Gestion y Control de Clientes</h1>
+      </mat-toolbar>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>

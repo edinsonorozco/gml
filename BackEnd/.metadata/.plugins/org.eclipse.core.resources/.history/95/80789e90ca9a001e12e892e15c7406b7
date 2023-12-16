@@ -1,0 +1,59 @@
+package com.ms.activities.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.ms.activities.entities.Clients;
+import com.ms.activities.entities.Employee;
+import com.ms.activities.repositories.ClientsRepository;
+
+public class ClientsImpl implements ClientsInterfaces{
+	
+	@Autowired
+    private ClientsRepository clientsRepository;
+	
+	@Override
+    @Transactional(readOnly = true)
+    public List<Clients> findAll() {
+        return clientsRepository.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Clients findById(String sharedKey) {
+        return clientsRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Clients clients) {
+    	clientsRepository.save(clients);
+    }
+    
+    @Override
+    @Transactional
+    public void delete(String sharedKey) {
+    	clientsRepository.deleteById(sharedKey);
+    }
+    
+    @Override
+    @Transactional
+    public Clients update(Clients sharedKey) {
+     	Employee employeeUpdate = employeeRepository.findById(employee.getId()).orElse(null);
+    	employeeUpdate.setId(employee.getId());
+    	employeeUpdate.setIdentification(employee.getIdentification());
+    	employeeUpdate.setNames(employee.getNames());
+    	employeeUpdate.setSurnames(employee.getSurnames());
+    	clientsRepository.save(employeeUpdate);
+        return employeeUpdate;
+    }
+
+    @Override
+    @Transactional
+    public Clients findBySharedId(String sharedKey) {
+        return clientsRepository.findByIdentification(sharedKey).orElse(null);
+    }
+
+}

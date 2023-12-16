@@ -1,0 +1,72 @@
+package com.ms.clients.controllers;
+
+import com.ms.activities.services.ActivitiesService;
+import com.ms.clients.entities.Activities;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api")
+public class ActivitiesController {
+
+    @Autowired
+    private ActivitiesService activitiesService;
+
+    @GetMapping("/listActivities")
+    public List<Activities> listAllActivities() {
+        return activitiesService.findAll();
+    }
+    
+    @PostMapping("/registerActivities")
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<?> registerActivities(@RequestBody Activities activities) {
+        Map<String, Object> response = new HashMap<>();        
+        try {        	
+        	activitiesService.save(activities);
+            response.put("message", "Actividad creada con éxito.");
+            response.put("objectResponse", activities);
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
+        } catch (DataAccessException e) {
+            response.put("message", "Error al hacer registro en la base de datos.");
+            response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    @PostMapping(value = "/deleteActivities")
+	public ResponseEntity<?> deleteActivities(@RequestBody long idActivities) {
+    	Map<String, Object> response = new HashMap<>();
+		try {
+			activitiesService.delete(idActivities);
+			response.put("message", "Actividad eliminada con éxito.");            
+            return new ResponseEntity<>(response, HttpStatus.OK);
+		} catch (DataAccessException exception) {
+			response.put("message", "Error al hacer la eliminacion en la base de datos.");
+            response.put("error", exception.getMessage().concat(": ").concat(exception.getMostSpecificCause().getMessage()));
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+    
+    @PutMapping(value = "/updateActivities")
+	public ResponseEntity<?> updateActivities(@RequestBody Activities activities) {
+    	Map<String, Object> response = new HashMap<>();
+    	try {
+    		activities.setStatus("EJECUTADA");
+    		activitiesService.update(activities);			
+			response.put("message", "Actividad actualizada con éxito.");
+			response.put("objectResponse", activities);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+		} catch (DataAccessException exception) {
+			response.put("message", "Error al hacer la actualizacion en la base de datos.");
+            response.put("error", exception.getMessage().concat(": ").concat(exception.getMostSpecificCause().getMessage()));
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+}

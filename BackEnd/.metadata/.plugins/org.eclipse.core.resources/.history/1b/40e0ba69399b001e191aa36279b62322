@@ -1,0 +1,37 @@
+2023-12-15 05:08:39.095  INFO 692 --- [main] c.c.d.j.j.JvCheckoutApplicationTests     : Starting JvCheckoutApplicationTests using Java 11.0.15 on CO-PF3VGHH9 with PID 692 (started by eorozcogonzl in C:\Users\eorozcogonzl\Documents\Proyectos\jv-checkout\jv-checkout)
+2023-12-15 05:08:39.103  INFO 692 --- [main] c.c.d.j.j.JvCheckoutApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:08:41.358  INFO 692 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsProvider' of type [com.amazonaws.auth.DefaultAWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15 05:08:41.740  WARN 692 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:08:44.236 ERROR 692 --- [main] c.c.d.j.j.c.order.OrderClientFactory     : JV_ORDER_MS value not found, enabling default value
+2023-12-15 05:08:44.252  WARN 692 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:08:44.670 ERROR 692 --- [main] c.c.d.j.j.c.pays.PaysClientFactory       : JV_PAYS_MS value not found, enabling default value
+2023-12-15 05:08:44.689  WARN 692 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:08:45.121 ERROR 692 --- [main] c.c.d.j.j.c.s.ShoppingCartClientFactory  : JV_SHOPPING_CART_MS value not found, enabling default value
+2023-12-15 05:08:45.129  WARN 692 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:08:45.532 ERROR 692 --- [main] c.d.j.j.c.v.ValidateCouponsClientFactory : JV_VALIDATE_COUPONS_MS value not found, enabling default value
+2023-12-15 05:08:47.279  INFO 692 --- [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2023-12-15 05:08:48.270  INFO 692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:08:48.341  INFO 692 --- [main] c.c.d.j.j.JvCheckoutApplicationTests     : Started JvCheckoutApplicationTests in 9.613 seconds (JVM running for 10.87)
+2023-12-15 05:10:23.530  INFO 28920 --- [main] c.c.d.j.j.JvCheckoutApplication          : Starting JvCheckoutApplication using Java 11.0.15 on CO-PF3VGHH9 with PID 28920 (C:\Users\eorozcogonzl\Documents\Proyectos\jv-checkout\jv-checkout\target\classes started by eorozcogonzl in C:\Users\eorozcogonzl\Documents\Proyectos\jv-checkout\jv-checkout)
+2023-12-15 05:10:23.536  INFO 28920 --- [main] c.c.d.j.j.JvCheckoutApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 05:10:24.739  INFO 28920 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsProvider' of type [com.amazonaws.auth.DefaultAWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15 05:10:24.987  INFO 28920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 05:10:24.998  INFO 28920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 05:10:24.998  INFO 28920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-15 05:10:25.144  INFO 28920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 05:10:25.144  INFO 28920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1567 ms
+2023-12-15 05:10:25.420  WARN 28920 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:10:26.542 ERROR 28920 --- [main] c.c.d.j.j.c.order.OrderClientFactory     : JV_ORDER_MS value not found, enabling default value
+2023-12-15 05:10:26.552  WARN 28920 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:10:26.943 ERROR 28920 --- [main] c.c.d.j.j.c.pays.PaysClientFactory       : JV_PAYS_MS value not found, enabling default value
+2023-12-15 05:10:26.950  WARN 28920 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:10:27.345 ERROR 28920 --- [main] c.c.d.j.j.c.s.ShoppingCartClientFactory  : JV_SHOPPING_CART_MS value not found, enabling default value
+2023-12-15 05:10:27.350  WARN 28920 --- [main] s.a.a.p.internal.ProfileFileReader       : Ignoring profile 'sso-session sesionedinson' on line 8 because it did not start with 'profile ' and it was not 'default'.
+2023-12-15 05:10:27.731 ERROR 28920 --- [main] c.d.j.j.c.v.ValidateCouponsClientFactory : JV_VALIDATE_COUPONS_MS value not found, enabling default value
+2023-12-15 05:10:28.572  INFO 28920 --- [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2023-12-15 05:10:29.137  INFO 28920 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-12-15 05:10:29.200  INFO 28920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 05:10:29.214  INFO 28920 --- [main] c.c.d.j.j.JvCheckoutApplication          : Started JvCheckoutApplication in 6.093 seconds (JVM running for 7.533)
+2023-12-15 05:10:30.466  INFO 28920 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 05:10:30.467  INFO 28920 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 05:10:30.469  INFO 28920 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

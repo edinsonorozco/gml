@@ -1,0 +1,99 @@
+package com.ms.clients.services;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.util.ReflectionTestUtils;
+
+import com.ms.clients.entities.Clients;
+import com.ms.clients.repositories.ClientsRepository;
+
+public class ClientsimplTest {
+	
+	@Autowired
+    private ClientsRepository clientsRepository;
+
+    @InjectMocks
+    private ClientsImpl clientsImpl = new ClientsImpl();
+    
+    @Test
+    void findAll_Success() {
+        Clients client1 = new Clients("prueba1","prueba2","prueba3","prueba4","prueba5");
+        Clients client2 = new Clients("prueba1","prueba2","prueba3","prueba4","prueba5");
+        List<Clients> clientsList = Arrays.asList(client1, client2);
+        clientsRepository = mock(ClientsRepository.class);
+        when(clientsRepository.findAll()).thenReturn(clientsList);
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        List<Clients> foundClients = clientsImpl.findAll();
+        assertEquals(2, foundClients.size());
+    }
+    
+    @Test
+    void findById_NotFound() {
+        String sharedKey = "nonExistentSharedKey";
+        clientsRepository = mock(ClientsRepository.class);
+        when(clientsRepository.findById(sharedKey)).thenReturn(Optional.empty());
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        Clients foundClient = clientsImpl.findById(sharedKey);
+        assertEquals(null, foundClient);
+    }
+    
+    @Test
+    void findById_Success() {
+        String sharedKey = "someSharedKey";
+        Clients client = new Clients("someSharedKey","prueba2","prueba3","prueba4","prueba5");
+        clientsRepository = mock(ClientsRepository.class);
+        when(clientsRepository.findById(sharedKey)).thenReturn(Optional.of(client));
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        Clients foundClient = clientsImpl.findById(sharedKey);
+        assertEquals(client, foundClient);
+    }
+    
+    @Test
+    void save_Success() {
+        Clients clientToSave = new Clients("someSharedKey","prueba2","prueba3","prueba4","prueba5");
+        clientsRepository = mock(ClientsRepository.class);
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        clientsImpl.save(clientToSave);
+        verify(clientsRepository).save(clientToSave);
+    }
+    
+    @Test
+    void delete_Success() {
+        String sharedKeyToDelete = "someSharedKey";
+        clientsRepository = mock(ClientsRepository.class);
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        clientsImpl.delete(sharedKeyToDelete);
+        verify(clientsRepository).deleteById(sharedKeyToDelete);
+    }
+    
+    @Test
+    void findBySharedId_Success() {
+        String sharedKey = "someSharedKey";
+        Clients client = new Clients("someSharedKey","prueba2","prueba3","prueba4","prueba5");
+        clientsRepository = mock(ClientsRepository.class);
+        when(clientsRepository.findById(sharedKey)).thenReturn(Optional.of(client));
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        Clients foundClient = clientsImpl.findBySharedId(sharedKey);
+        assertEquals(client, foundClient);
+    }
+    
+    @Test
+    void findBySharedId_NotFound() {
+        String sharedKey = "nonExistentSharedKey";
+        clientsRepository = mock(ClientsRepository.class);
+        when(clientsRepository.findById(sharedKey)).thenReturn(Optional.empty());
+        ReflectionTestUtils.setField(clientsImpl, "clientsRepository", clientsRepository);
+        Clients foundClient = clientsImpl.findBySharedId(sharedKey);
+        assertEquals(null, foundClient);
+    }
+}

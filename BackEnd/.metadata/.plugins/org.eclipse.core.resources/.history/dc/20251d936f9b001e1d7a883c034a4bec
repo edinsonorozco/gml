@@ -1,0 +1,41 @@
+package com.ms.clients.services;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.ms.clients.entities.Clients;
+import com.ms.clients.repositories.ClientsRepository;
+
+public class ClientsimplTest {
+	
+	@Mock
+    private ClientsRepository clientsRepository;
+
+    @InjectMocks
+    private ClientsImpl clientsImpl;
+    
+    @Test
+    void findAll_Success() {
+        // Arrange
+        Clients client1 = new Clients(/* set client data here */);
+        Clients client2 = new Clients(/* set client data here */);
+        List<Clients> clientsList = Arrays.asList(client1, client2);
+
+        when(clientsRepository.findAll()).thenReturn(clientsList);
+
+        // Act
+        List<Clients> foundClients = clientsImpl.findAll();
+
+        // Assert
+        assertEquals(2, foundClients.size());
+        // Add more assertions based on the behavior you expect from findAll()
+    }
+
+}

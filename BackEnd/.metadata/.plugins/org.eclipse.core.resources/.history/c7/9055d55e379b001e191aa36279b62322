@@ -1,0 +1,58 @@
+package com.ms.clients.services;
+
+import com.ms.clients.entities.Employee;
+import com.ms.clients.repositories.EmployeeRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+
+@Service
+public class EmployeeServiceImp implements EmployeeService {
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Employee> findAll() {
+        return employeeRepository.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Employee findById(Long id) {
+        return employeeRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Employee employee) {
+    	employeeRepository.save(employee);
+    }
+    
+    @Override
+    @Transactional
+    public void delete(Long idEmpleado) {
+    	employeeRepository.deleteById(idEmpleado);
+    }
+    
+    @Override
+    @Transactional
+    public Employee update(Employee employee) {
+     	Employee employeeUpdate = employeeRepository.findById(employee.getId()).orElse(null);
+    	employeeUpdate.setId(employee.getId());
+    	employeeUpdate.setIdentification(employee.getIdentification());
+    	employeeUpdate.setNames(employee.getNames());
+    	employeeUpdate.setSurnames(employee.getSurnames());
+    	employeeRepository.save(employeeUpdate);
+        return employeeUpdate;
+    }
+
+    @Override
+    @Transactional
+    public Employee findByIdentification(String documentNumber) {
+        return employeeRepository.findByIdentification(documentNumber).orElse(null);
+    }
+}

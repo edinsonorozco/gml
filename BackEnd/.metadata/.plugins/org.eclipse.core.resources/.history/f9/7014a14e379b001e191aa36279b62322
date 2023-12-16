@@ -1,0 +1,31 @@
+package com.ms.clients.entities;
+
+import javax.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@AllArgsConstructor
+@Table(name = "empleado")
+public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "identificacion")
+    private String identification;
+    
+    @Column(name = "nombres")
+    private String names;
+
+    @Column(name = "apellidos")
+    private String surnames;
+
+    public Employee() {        
+    }
+}

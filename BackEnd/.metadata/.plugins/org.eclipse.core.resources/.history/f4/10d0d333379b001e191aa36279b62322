@@ -1,0 +1,15 @@
+package com.ms.activities.repositories;
+
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ms.clients.entities.Clients;
+
+
+@Repository
+public interface ClientsRepository extends JpaRepository<Clients, String>{	
+	
+	Optional<Clients> findById(String id);	
+
+}
